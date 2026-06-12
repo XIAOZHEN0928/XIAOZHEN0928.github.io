@@ -17,6 +17,10 @@ This personal academic website template is based on [startbootstrap](https://git
 
 The template is designed to integrate Markdown files as content input.  There's no need to compile the webpage before deployment.  Upon loading, the Markdown files are automatically parsed and embedded into the page.
 
+The homepage sections and navigation bar are configured in `contents/config.yml`. Each section loads its body from a matching Markdown file in `contents/`, such as `contents/publications.md`.
+
+The top background supports multiple images. Add images under `static/assets/background/`, list them in `contents/config.yml`, and the page will pick a random first image on refresh before rotating through the list.
+
 This template supports LaTeX formula input. You can use `$...$` and `\(...\)` as delimiters for inline-math, or use `$$...$$` and `\[...\]` as delimiters for display-math. Macros such as `\ref{...}`, `\eqref{...}`, and `\begin{equation}...\end{equation}` are also supported. See [MathJax](https://docs.mathjax.org/en/latest/index.html) for more details.
 
 :milky_way: Demo: https://senli1073.github.io/
@@ -40,6 +44,7 @@ The directory structure is as follows:
 ├── contents
 └── static
     ├── assets
+    │   ├── background
     │   └── img
     ├── css
     └── js
@@ -47,9 +52,39 @@ The directory structure is as follows:
 
 (2) Modify the content of each section, which corresponds to `contents/*.md`.
 
-(3) Adjust the title, copyright information, and other text of the website in `contents/config.yml`
+(3) Adjust the title, copyright information, background images, footer links, navigation, and sections in `contents/config.yml`.
 
-(4) Replace background image and photo with new ones for your web pages in `static/assets/img/`
+Example section configuration:
+
+```yaml
+sections:
+  - id: home
+    nav: HOME
+    title: User Name&ensp;|&ensp;姓名
+    href: '#page-top'
+  - id: publications
+    nav: PUBLICATIONS
+    title: PUBLICATIONS
+    icon: bi-file-text-fill
+  - id: awards
+    nav: AWARDS
+    title: AWARDS
+    icon: bi-award-fill
+```
+
+For each section, `id` maps to `contents/<id>.md`, `nav` sets the navigation text, `title` sets the section heading, and `icon` is an optional [Bootstrap Icons](https://icons.getbootstrap.com/) class. If `href` is omitted, the navigation link defaults to `#<id>`.
+
+Example background configuration:
+
+```yaml
+backgrounds:
+  - static/assets/background/background_0.jpeg
+  - static/assets/background/background_1.png
+background-interval-ms: 7000
+background-overlay: 0.52
+```
+
+(4) Replace background images in `static/assets/background/` and replace the profile photo in `static/assets/img/`.
 
 (5) Push it: 
 ```
