@@ -9,7 +9,7 @@ He is currently a Phd student in the School of Taxiation and Finance at Zhongnan
 Email: ouyangxiaozhen0923@163.com
 
 #### Education
-MSC, Economics, University of Copenhagen, 2024—2026.\
+MSC, Economics, University of Copenhagen, 2024-2026.\
 BA, Economics, Wuhan University of Technology, 2019-2023.
 
 #### Research Interests
