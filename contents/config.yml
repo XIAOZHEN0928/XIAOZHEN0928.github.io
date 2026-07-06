@@ -16,7 +16,7 @@ license-link:
 sections:
   - id: home
     nav: HOME
-    title: User Name&ensp;|&ensp;Xiaozhen Ouyang
+    title: "User Name | Xiaozhen Ouyang"
     href: '#page-top' # Default to '#<id>' if not specified
   - id: publications
     nav: PUBLICATIONS
