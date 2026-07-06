@@ -1,7 +1,7 @@
 
 
 
-He is currently a Phd student in the School of Taxiation and Finance at Zhongnan University of Economics and Law.
+He is currently a PHD student in the School of Public Finance and Taxation, Zhongnan University of Economics and Law.
 
 #### Contact
 
