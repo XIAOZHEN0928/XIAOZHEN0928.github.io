@@ -1,5 +1,5 @@
 title: Xiaozhen Ouyang Homepage
-page-top-title: Xiaozhen Ouyang
+page-top-title: Xiaozhen Ouyang (欧阳潇桢)
 top-section-bg-text: Economics
 backgrounds:
   - static/assets/background/background_0.jpeg
@@ -18,9 +18,9 @@ sections:
     nav: HOME
     title: "Name | Xiaozhen Ouyang"
     href: '#page-top' # Default to '#<id>' if not specified
-  - id: publications
-    nav: PUBLICATIONS
-    title: PUBLICATIONS
+  - id: research
+    nav: RESEARCH
+    title: RESEARCH
     icon: bi-file-text-fill
   - id: awards
     nav: AWARDS
